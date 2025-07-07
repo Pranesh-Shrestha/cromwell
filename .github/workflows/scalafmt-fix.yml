@@ -46,11 +46,11 @@ jobs:
           fi
         shell: bash
       - uses: actions/checkout@v3 # checkout the cromwell repo
-        with:
-         ref: ${{ inputs.target-branch }}
-      - uses: ./.github/set_up_cromwell_action
-        with:
-          cromwell_repo_token: ${{ secrets.BROADBOT_GITHUB_TOKEN }}
+      #   with:
+      #    ref: ${{ inputs.target-branch }}
+      # - uses: ./.github/set_up_cromwell_action
+      #   with:
+      #     cromwell_repo_token: ${{ secrets.BROADBOT_GITHUB_TOKEN }}
       - name: Run ScalaFmt Fixup
         if: steps.check-comment.outputs.comment-triggered == 'true' || github.event_name == 'workflow_dispatch'
         env:
