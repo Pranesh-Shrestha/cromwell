@@ -45,8 +45,8 @@ jobs:
           fi
         shell: bash
       - uses: actions/checkout@v3 # checkout the cromwell repo
-        with:
-         ref: ${{ inputs.target-branch }}
+        # with:
+        #  ref: ${{ inputs.target-branch }}
       # - uses: ./.github/set_up_cromwell_action
       #   continue-on-error: true
       #   with:
