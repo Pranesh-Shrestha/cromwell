@@ -1,4 +1,3 @@
-
 name: 'ScalaFmt Fix'
 
 # This GitHub Action runs the ScalaFmt linting tool on the entire codebase.
